@@ -23,7 +23,7 @@ const Form = () => {
             <textarea name="comment" rows="5" cols="40" className="text-gray-800 w-80 sm:w-60 outline-none"></textarea>
             <br />
             <br />
-            <input className="bg-indigo-500 text-gray-800 font-bold w-24 rounded-md cursor-pointer hover:text-white active:transform hover:translate-y-1" type="submit" value="Submit" />
+            <input className="bg-blue-600 text-blue-800 font-bold w-24 rounded-md cursor-pointer hover:text-white active:transform hover:translate-y-1" type="submit" value="Submit" />
         </form>
     )
 }

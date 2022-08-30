@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from "../public/git.jpg"
+import logo from "../public/github-icon.svg"
 
 const Projects= () => {
     const [ items, setItems ] = useState([])
@@ -14,14 +14,13 @@ const Projects= () => {
         const data = await fetch(`https://api.github.com/users/Camilo-Suarez98/repos?sort=created&direction=desc`)
         const repo = await data.json()
         setItems(repo)
-        // console.log(repo);
     }
     
     const Project = items.map(item => (
         <div key={item.id} className="self-center justify-self-center w-80 md:w-64 sm:w-60">
             <Link className="w-60 h-52 cursor-pointer" href={item.html_url}>
                 <a target="_blank" className="hover:font-bold">
-                    <Image src={logo} width={130} height={115} />
+                    <Image fill-white src={logo} width={130} height={115} />
                     <h3>{item.name}</h3>
                 </a>
             </Link>

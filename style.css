@@ -1,0 +1,22 @@
+.link:hover {
+    transform: translateY(-10px);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .link:hover {
+        transform: translateY(0);
+    }
+}
+
+.link:hover .icon {
+    display: block;
+    transform: translateY(0px);
+}
+
+@media (max-width: 768px) {
+    .link .icon {
+        display: block;
+        transform: translateY(0px);
+    }
+}

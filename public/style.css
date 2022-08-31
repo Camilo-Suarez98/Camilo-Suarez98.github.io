@@ -1,9 +1,5 @@
-.icon {
-    display: none;
-}
-
 .link:hover {
-    transform: translateY(-48px);
+    transform: translateY(-10px);
     font-weight: bold;
 }
 

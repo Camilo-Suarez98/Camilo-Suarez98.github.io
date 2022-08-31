@@ -16,7 +16,7 @@ const Layout = ({ title, children }) => {
           crossorigin="anonymous" />
           <link rel="stylesheet" href="style.css" />
       </Head>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-indigo-500 mb-10">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 mb-10">
         <div className="container px-4 mx-auto flex items-center justify-between sm:flex-col sm:justify-center">
             <div className="flex justify-start item-center w-full relative px-4 sm:w-auto sm:static sm:justify-center">
               <Image className="image" src={logo} alt="Page's logo" width={30} height={20} />
@@ -56,7 +56,7 @@ const Layout = ({ title, children }) => {
           </div>
         </div>
       </nav>
-      <div className="w-full bg-gray-800">
+      <div className="w-full bg-blue-500 h-full flex flex-col justify-evenly">
         {children}
       </div>
     </div>

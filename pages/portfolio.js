@@ -3,10 +3,12 @@ import Projects from "../components/Projects"
 
 const portfolio = () => {
     return(
-        <div className="bg-blue-500 text-white">
-            <Layout title="Portfolio" />
-            <Projects />
-        </div>
+        <>
+            <Layout title="Portfolio">
+                <h1 className="font-semibold text-4xl text-gray-700 text-center pb-8">Projetcs</h1>
+                <Projects />
+            </Layout>
+        </>
     )
 }
 

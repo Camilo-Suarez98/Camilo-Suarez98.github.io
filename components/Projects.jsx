@@ -17,11 +17,12 @@ const Projects= () => {
     }
     
     const Project = items.map(item => (
-        <div key={item.id} className="self-center justify-self-center w-80 md:w-64 sm:w-60">
+        <div key={item.id} className="projects self-center justify-self-center transition-all duration-500 py-4 border-2 border-gray-300 rounded-xl w-80 hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 md:w-64 sm:w-60">
             <Link className="w-60 h-52 cursor-pointer" href={item.html_url}>
-                <a target="_blank" className="hover:font-bold">
-                    <Image fill-white src={logo} width={130} height={115} />
+                <a target="_blank" className="text-gray-800 transition-all duration-300">
+                    <Image src={logo} width={130} height={115} />
                     <h3>{item.name}</h3>
+                    <p>Language: <strong>{item.language}</strong></p>
                 </a>
             </Link>
         </div>

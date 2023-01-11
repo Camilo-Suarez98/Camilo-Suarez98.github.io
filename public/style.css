@@ -1,6 +1,7 @@
 .link:hover {
     transform: translateY(-10px);
     font-weight: bold;
+    color: rgb(29 78 216);
 }
 
 @media screen and (max-width: 768px) {
@@ -19,4 +20,45 @@
         display: block;
         transform: translateY(0px);
     }
+}
+
+.🌞 {
+    background-color: rgb(239 246 255);
+    transition: all 0.3 ease;
+}
+
+.🌞 h1 {
+    background-color: rgb(239 246 255);
+    transition: all 0.3 ease;
+}
+
+.🌞 .projects:hover {
+    background-color: rgb(55 65 81);
+}
+
+.🌞 .projects:hover a h3, .🌞 .projects:hover a p {
+    color: rgb(239 246 255);
+}
+
+.🌚 {
+    background-color: rgb(55 65 81);
+    color: rgb(239 246 255);
+    transition: all 0.3s ease;
+}
+
+.🌚 h1 {
+    color: rgb(239 246 255);
+    transition: all 0.3s ease;
+}
+
+.🌚 p {
+    color: rgb(209 213 219);
+}
+
+.🌚 a {
+    color: rgb(209 213 219);
+}
+
+.🌚 .projects:hover a h3, .🌚 .projects:hover a p {
+    color: rgb(55 65 81);
 }

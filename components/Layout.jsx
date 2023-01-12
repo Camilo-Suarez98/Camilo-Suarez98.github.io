@@ -2,17 +2,16 @@ import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../public/icono-portf.png"
-import React, { useContext, useState } from "react"
-import {ThemeContext} from "../context/ThemeContext"
+import React, { useContext } from "react"
+import { ThemeContext } from "../context/ThemeContext"
 
 const Layout = ({ title, children }) => {
-  const themeMode = useContext(ThemeContext)
-  const [dark, setDark] = useState(themeMode)
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return(
     <div>
       <Head>
-        <title>{title} - Camilo S</title>
+        <title>{ title } - Camilo S</title>
         <link rel="icon" href="/icono-portf.png" />
         <link
           rel="stylesheet"
@@ -20,9 +19,13 @@ const Layout = ({ title, children }) => {
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
           crossOrigin="anonymous"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
         <link rel="stylesheet" href="style.css" />
       </Head>
-      <div className={dark === '🌞' ? '🌚' : '🌞'}>
+      <div className={theme === 'light' ? 'dark' : 'light'}>
         <nav className="w-full relative flex flex-wrap items-center justify-between px-2 py-3 mb-10">
           <div className="container px-4 mx-auto flex items-center justify-between sm:flex-col sm:justify-center">
             <div className="relative px-4 sm:w-auto sm:static sm:justify-center">
@@ -31,11 +34,8 @@ const Layout = ({ title, children }) => {
                 Camilo Suárez
               </a>
             </div>
-            <button onClick={() => {
-              setDark(dark === '🌞' ? '🌚' : '🌞')
-              }}
-            >
-              {dark}
+            <button onClick={toggleTheme}>
+              { theme === 'light' ? '🌝' : '🌚' }
             </button>
             
             <button className="burger absolute right-0 top-5 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent hidden outline-none focus:outline-none" type="button">
@@ -74,6 +74,9 @@ const Layout = ({ title, children }) => {
         <div className="w-full h-full flex flex-col justify-evenly">
           {children}
         </div>
+        <footer>
+          <p className="text-center">©2023 This project was created using NextJS and styled with Tailwind</p>
+        </footer>
       </div>     
     </div>
   )

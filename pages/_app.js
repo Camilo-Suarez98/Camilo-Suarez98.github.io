@@ -1,13 +1,13 @@
 import 'tailwindcss/tailwind.css'
 import "../public/style.css"
-import { DarkModeProvider } from '../context/ThemeContext'
+import { ThemeProvider } from '../context/ThemeContext'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <DarkModeProvider>
+      <ThemeProvider>
         <Component {...pageProps} />
-      </DarkModeProvider>
+      </ThemeProvider>
     </>
   )
 }

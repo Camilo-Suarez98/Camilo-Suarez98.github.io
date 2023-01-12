@@ -22,43 +22,41 @@
     }
 }
 
-.🌞 {
+.light {
     background-color: rgb(239 246 255);
     transition: all 0.3 ease;
 }
 
-.🌞 h1 {
+.light h1 {
     background-color: rgb(239 246 255);
-    transition: all 0.3 ease;
 }
 
-.🌞 .projects:hover {
+.light .projects:hover {
     background-color: rgb(55 65 81);
 }
 
-.🌞 .projects:hover a h3, .🌞 .projects:hover a p {
+.light .projects:hover a h3, .light .projects:hover a p {
     color: rgb(239 246 255);
 }
 
-.🌚 {
+.dark {
     background-color: rgb(55 65 81);
     color: rgb(239 246 255);
     transition: all 0.3s ease;
 }
 
-.🌚 h1 {
+.dark h1 {
     color: rgb(239 246 255);
-    transition: all 0.3s ease;
 }
 
-.🌚 p {
+.dark p {
     color: rgb(209 213 219);
 }
 
-.🌚 a {
+.dark a {
     color: rgb(209 213 219);
 }
 
-.🌚 .projects:hover a h3, .🌚 .projects:hover a p {
+.dark .projects:hover a h3, .dark .projects:hover a p {
     color: rgb(55 65 81);
 }

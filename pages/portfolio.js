@@ -7,7 +7,7 @@ const portfolio = () => {
             <Layout title="Portfolio">
                 <h1 className="font-semibold text-4xl text-gray-700 text-center pb-8">Projects</h1>
                 <QueryProvider />
-                <a href="#top" className="fixed right-9 bottom-5 border-2 border-gray-400 rounded-full ease-in transition-all duration-300">
+                <a href="#top" className="fixed right-9 bottom-5 border-2 border-gray-400 rounded-full ease-in transition-all duration-300 sm:right-4 sm:bottom-2.5">
                     <span className="material-symbols-outlined flex">
                         arrow_upward
                     </span>

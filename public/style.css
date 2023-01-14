@@ -4,6 +4,20 @@
     color: rgb(29 78 216);
 }
 
+.projects-layout {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.burger {
+    cursor: pointer;
+    padding: 4px 12px;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    bottom: 32px;
+}
+
 @media screen and (max-width: 768px) {
     .link:hover {
         transform: translateY(0);
@@ -25,6 +39,12 @@
 .light {
     background-color: rgb(239 246 255);
     transition: all 0.3 ease;
+    min-height: 100vh;
+    position: relative;
+}
+
+.light .burger span {
+    background-color: #000;
 }
 
 .light h1 {
@@ -40,9 +60,15 @@
 }
 
 .dark {
+    min-height: 100vh;
     background-color: rgb(55 65 81);
     color: rgb(239 246 255);
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.dark .burger span {
+    background-color: #fff;
 }
 
 .dark h1 {

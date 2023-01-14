@@ -37,9 +37,9 @@ const Projects = () => {
     if(error) return 'An error has ocurred: ' + error.message
 
     return (
-        <div className="grid grid-cols-2 gap-4 mx-52 pb-12 content-center text-center ls:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
+        <div className="projects-layout grid grid-cols-3 gap-4 xl:grid-cols-2 mx-52 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
             {data.map((user) => (
-                <div key={user.id} className="projects self-center justify-self-center transition-all duration-500 py-4 border-2 border-gray-300 rounded-xl w-80 hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 md:w-64 sm:w-60">
+                <div key={user.id} className="projects self-center justify-self-center transition-all duration-500 py-4 border-2 border-gray-300 rounded-xl w-80 hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 hover:-translate-y-3 md:w-72 sm:w-60">
                     <Link className="w-60 h-52 cursor-pointer" href={user.html_url}>
                         <a target="_blank" className="text-gray-800 transition-all duration-300">
                             <Image src={logo} width={130} height={115} />

@@ -38,9 +38,8 @@ const Layout = ({ title, children }) => {
         <nav className="w-full relative flex flex-wrap items-center justify-between px-2 py-3 mb-10 ls:px-0">
           <div className="container px-4 mx-auto flex items-center justify-between sm:flex-col sm:justify-center ls:px-0">
             <div className="flex relative px-4 sm:w-auto sm:static sm:justify-center">
-              <a href="/" className="flex items-center w-40 text-sm font-bold leading-relaxed cursor-pointer inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-800">
+              <a href="/" className="flex items-center text-sm font-bold leading-relaxed cursor-pointer inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-800">
                 <Image className="image" src={logo} alt="Page's logo" width={40} height={40} />
-                Camilo Suárez
               </a>
               <button onClick={toggleTheme}>
                 { theme === 'light' ? '🌝' : '🌚' }
@@ -53,7 +52,7 @@ const Layout = ({ title, children }) => {
               <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
             </button>
 
-            <div className="flex flex-grow items-center sm:justify-center sm:text-center ls:w-full ls:absolute ls:-bottom-40 z-50 ls:m-auto" id="example-navbar-warning">
+            <div className="flex flex-grow items-center sm:justify-center sm:text-center ls:w-full ls:absolute ls:-bottom-60 z-50 ls:m-auto" id="example-navbar-warning">
               <ul className={ menu === 'inline' ? 'ls:hidden flex list-none ml-auto' : 'flex list-none ml-auto transition--all duration-300 ls:flex-col sm:justify-start ls:w-full ls:m-auto ls:items-center ls:bg-gray-500' }>
                 <li className="nav-item w-full">
                   <Link href="/" title="Home">
@@ -73,6 +72,13 @@ const Layout = ({ title, children }) => {
                   <Link href="/contact" title="Contact">
                     <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
                       Contact
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item w-full">
+                  <Link href="https://docs.google.com/document/d/1pCMX9uTb3b7oc-cO1TdAweR5nXJfAmJK/edit">
+                    <a target="_blank" className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
+                      CV
                     </a>
                   </Link>
                 </li>

@@ -1,3 +1,7 @@
+body {
+    background-color: #0a192f;
+}
+
 .link:hover {
     transform: translateY(-10px);
     font-weight: bold;
@@ -5,7 +9,7 @@
 }
 
 .projects-layout {
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -18,27 +22,14 @@
     bottom: 32px;
 }
 
-@media screen and (max-width: 768px) {
-    .link:hover {
-        transform: translateY(0);
-    }
-}
-
 .link:hover .icon {
     display: block;
     transform: translateY(0px);
 }
 
-@media (max-width: 768px) {
-    .link .icon {
-        display: block;
-        transform: translateY(0px);
-    }
-}
-
 .light {
     background-color: rgb(239 246 255);
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     min-height: 100vh;
     position: relative;
 }
@@ -51,8 +42,28 @@
     background-color: rgb(239 246 255);
 }
 
-.light .projects:hover {
-    background-color: rgb(55 65 81);
+.light .projects {
+    background-color: #dfdfdf;
+}
+
+.light .buttons-color-letter {
+    color: rgb(55 65 81);
+}
+
+.light .buttons-color-form {
+    color: rgb(239 246 255);
+}
+
+.light .send-form {
+    background-color: #1a3a6b;
+}
+
+.light .circle-arrow {
+    background-color: #dfdfdf;
+}
+
+.light .projects:hover a .project-title, .light .projects:hover a .language-project, .light .projects:hover a .project-icon {
+    color: rgb(55 65 81);
 }
 
 .light .projects:hover a h3, .light .projects:hover a p {
@@ -61,7 +72,7 @@
 
 .dark {
     min-height: 100vh;
-    background-color: rgb(55 65 81);
+    background-color: #0a192f;
     color: rgb(239 246 255);
     transition: all 0.3s ease;
     position: relative;
@@ -69,6 +80,26 @@
 
 .dark .burger span {
     background-color: #fff;
+}
+
+.dark .projects {
+    background-color: #1a3a6b;
+}
+
+.dark .send-form {
+    background-color: rgb(239 246 255);
+}
+
+.dark .buttons-color-letter {
+    color: rgb(239 246 255);
+}
+
+.dark .buttons-color-form {
+    color: rgb(55 65 81);
+}
+
+.dark .circle-arrow {
+    background-color: #1a3a6b;
 }
 
 .dark h1 {
@@ -83,6 +114,27 @@
     color: rgb(209 213 219);
 }
 
-.dark .projects:hover a h3, .dark .projects:hover a p {
+.dark .projects:hover a .project-title, .dark .projects:hover a .language-project, .dark .projects:hover a .project-icon {
+    color: rgb(209 213 219);
+}
+
+.dark .projects:hover a h3, .dark .projects:hover a p, .dark .projects:hover a i {
     color: rgb(55 65 81);
+}
+
+@media screen and (max-width: 650px) {
+    .menu-burger {
+        background-color: #1a3a6b;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .link:hover {
+        transform: translateY(0);
+    }
+
+    .link .icon {
+        display: block;
+        transform: translateY(0px);
+    }
 }

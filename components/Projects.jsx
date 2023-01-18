@@ -1,18 +1,6 @@
-import { useState, useEffect } from "react"
-import Image from "next/image"
 import Link from "next/link"
-import logo from "../public/github-icon.svg"
-import { QueryClient, QueryClientProvider, useQuery } from "react-query"
+import { useQuery } from "react-query"
 
-const queryClient = new QueryClient()
-
-const QueryProvider = () => {
-    return (
-        <QueryClientProvider client={queryClient}>
-            <Projects />
-        </QueryClientProvider>
-    )
-}
 
 const Projects = () => {
     const { isLoading, error, data } = useQuery('projectsData', () => 
@@ -37,14 +25,14 @@ const Projects = () => {
     if(error) return 'An error has ocurred: ' + error.message
 
     return (
-        <div className="projects-layout grid grid-cols-3 gap-4 xl:grid-cols-2 mx-52 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
+        <div className="projects-layout grid grid-cols-3 gap-8 xl:grid-cols-2 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
             {data.map((user) => (
-                <div key={user.id} className="projects self-center justify-self-center transition-all duration-500 py-4 border-2 border-gray-300 rounded-xl w-80 hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 hover:-translate-y-3 md:w-72 sm:w-60">
+                <div key={user.id} className="projects w-full self-center justify-self-center transition-all duration-500 py-4 rounded-xl hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 hover:-translate-y-3 md:w-72 sm:w-60">
                     <Link className="w-60 h-52 cursor-pointer" href={user.html_url}>
                         <a target="_blank" className="text-gray-800 transition-all duration-300">
-                            <Image src={logo} width={130} height={115} />
-                            <h3>Name: <strong>{user.name}</strong></h3>
-                            <p>Language: <strong>{user.language}</strong></p>
+                            <i className="project-icon fab fa-github fa-3x icon w-full h-16"></i>
+                            <h3 className="project-title h-14">Name: <strong>{user.name}</strong></h3>
+                            <p className="language-project">Language: <strong>{user.language}</strong></p>
                         </a>
                     </Link>
                 </div>
@@ -53,4 +41,4 @@ const Projects = () => {
     )
 }
 
-export default QueryProvider
+export default Projects

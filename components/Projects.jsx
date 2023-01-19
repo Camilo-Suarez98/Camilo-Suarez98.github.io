@@ -37,8 +37,6 @@ const Projects = () => {
         return setNumProjects(firstProjects)
     }
 
-    console.log('data', data.length);
-
     return (
         <>
             <div className="projects-layout grid grid-cols-3 gap-8 xl:grid-cols-2 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">

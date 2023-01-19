@@ -6,7 +6,6 @@ import nextIcon from "../public/nextjs-icon.svg"
 import reactIcon from "../public/react-icon.svg"
 import reactQueryIcon from "../public/react-query-icon.svg"
 import tailwindIcon from "../public/tailwind-icon.svg"
-import githubIcon from "../public/github-icon.svg"
 import React, { useContext, useState } from "react"
 import { ThemeContext } from "../context/ThemeContext"
 
@@ -66,15 +65,8 @@ const Layout = ({ title, children }) => {
                   </Link>
                 </li>
                 <li className="w-full">
-                  <Link href="/contact" title="Contact">
-                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
-                      Contact
-                    </a>
-                  </Link>
-                </li>
-                <li className="w-full">
                   <Link href="https://docs.google.com/document/d/1pCMX9uTb3b7oc-cO1TdAweR5nXJfAmJK/edit">
-                    <a target="_blank" className="px-3 py-2 border-2 border-blue-300 sm:border-4  flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
+                    <a target="_blank" className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
                       Resume
                     </a>
                   </Link>
@@ -94,35 +86,39 @@ const Layout = ({ title, children }) => {
         </div>
 
         <div className="mb-12">
-          <div className="w-3/4 m-auto mb-8 text-center">
+          <div className="w-3/4 m-auto mb-10 text-center">
             <h2 className="text-xl">This page was created with</h2>
           </div>
           <div className="w-3/4 m-auto grid grid-cols-5 ls:grid-cols-3 sm:grid-cols-2">
-            <div className="flex flex-col items-center justify-center ls:py-4">
+            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
               <Image src={reactIcon} width={50} height={50} />
               <h3>ReactJS</h3>
             </div>
-            <div className="flex flex-col items-center justify-center ls:py-4">
+            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
               <Image src={nextIcon} width={50} height={50} />
               <h3>NextJS</h3>
             </div>
-            <div className="flex flex-col items-center justify-center ls:py-4">
+            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
               <Image src={reactQueryIcon} width={50} height={50} />
               <h3>React Query</h3>
             </div>
-            <div className="flex flex-col items-center justify-center ls:py-4">
+            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
               <Image src={tailwindIcon} width={50} height={50} />
               <h3>Tailwind CSS</h3>
             </div>
-            <div className="flex flex-col items-center justify-center ls:py-4">
-              <Image src={githubIcon} width={50} height={50} />
+            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
+              <i className="fab fa-github fa-3x icon h-12"></i>
               <h3>GitHub API</h3>
             </div>
           </div>
         </div>
 
+        <div className="w-3/4 m-auto">
+          <h1 className="text-center">If you want to write me, send a message to <a href="mailto: camilo.suarez85@gmail.com" className="hover:opacity-70">camilo.suarez85@gmail.com</a></h1>
+        </div>
+
         <footer className="w-3/4 m-auto pt-4">
-          <p className="text-center">©2023 Portfolio created by <a className="font-bold" href="https://github.com/Camilo-Suarez98" target="_blank">Camilo-Suarez98</a></p>
+          <p className="text-center">©2023 Powered by <a className="font-bold" href="https://github.com/Camilo-Suarez98" target="_blank">Camilo-Suarez98</a></p>
         </footer>
       </div>     
     </div>

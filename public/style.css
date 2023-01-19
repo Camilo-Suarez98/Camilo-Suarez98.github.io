@@ -39,7 +39,11 @@ body {
 }
 
 .light h1 {
-    background-color: rgb(239 246 255);
+    color: rgb(55 65 81);
+}
+
+.light h2 {
+    color: rgb(55 65 81);
 }
 
 .light .projects {
@@ -52,6 +56,10 @@ body {
 
 .light .buttons-color-form {
     color: rgb(239 246 255);
+}
+
+.light .border-resume {
+    border: 2px solid rgb(37 99 235);
 }
 
 .light .send-form {
@@ -96,6 +104,10 @@ body {
 
 .dark .buttons-color-form {
     color: rgb(55 65 81);
+}
+
+.dark .border-resume {
+    border: 2px solid rgb(147 197 253);
 }
 
 .dark .circle-arrow {

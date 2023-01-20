@@ -39,7 +39,7 @@ const Projects = () => {
 
     return (
         <>
-            <div className="projects-layout grid grid-cols-3 gap-8 xl:grid-cols-2 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
+            <div className="w-full grid grid-cols-3 gap-8 xl:grid-cols-2 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
                 {data?.slice(0, numProjects)?.map((user) => (
                     <div key={user.id} className="projects w-full p-2.5 self-center justify-self-center transition-all duration-500 py-4 rounded-lg hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 hover:-translate-y-3 md:w-72 sm:w-60">
                         <Link className="w-60 h-52 cursor-pointer" href={user.html_url}>

@@ -45,7 +45,7 @@ const Projects = () => {
                         <Link className="w-60 h-52 cursor-pointer" href={user.html_url}>
                             <a target="_blank" className="text-gray-800 transition-all duration-300">
                                 <i className="project-icon fab fa-github fa-3x icon w-full h-16"></i>
-                                <h3 className="project-title h-14">Name: <strong>{user.name}</strong></h3>
+                                <h3 className="project-title h-14 hover:font-black">{user.name}</h3>
                                 <p className="language-project">Language: <strong>{user.language}</strong></p>
                             </a>
                         </Link>

@@ -40,7 +40,7 @@ const Layout = ({ title, children }) => {
         <nav className="w-full relative flex flex-wrap items-center justify-between px-2 py-3 mb-10 ls:pb-0 ls:px-0">
           <div className="container px-12 mx-auto flex items-center justify-between sm:flex-col sm:justify-center ls:px-0">
             <div className="flex relative px-4 sm:w-auto sm:static sm:justify-center">
-              <a href="/" className="flex items-center text-sm font-bold leading-relaxed cursor-pointer inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-800 sm:mr-0">
+              <a href="/" className="flex items-center text-sm font-bold leading-relaxed cursor-pointer mr-4 py-2 whitespace-nowrap uppercase text-gray-800 sm:mr-0">
                 <Image className="image" src={logo} alt="Page's logo" width={40} height={40} />
               </a>
             </div>

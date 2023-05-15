@@ -45,17 +45,12 @@ const Projects = () => {
                         <Link className="w-60 h-52 cursor-pointer" href={user.html_url}>
                             <a target="_blank" className="text-gray-800 transition-all duration-300">
                                 <i className="project-icon fab fa-github fa-3x icon w-full h-16"></i>
-<<<<<<< HEAD
                                 <h3 className="project-title h-14 hover:font-black">{user.name}</h3>
                                 {
                                     user.language === null ?
-                                    <p className="language-project">No language used</p> :
+                                    <p className="language-project">No langage</p> :
                                     <p className="language-project">Language: <strong>{user.language}</strong></p>
                                 }
-=======
-                                <h3 className="project-title h-14">Name: <strong>{user.name}</strong></h3>
-                                <p className="language-project">Language: <strong>{user.language}</strong></p>
->>>>>>> 8902ae5fb1460ecc1f3a39f39e3246624d0dc517
                             </a>
                         </Link>
                     </div>

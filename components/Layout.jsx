@@ -31,6 +31,7 @@ const Layout = ({ title, children }) => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
         />
+<<<<<<< HEAD
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
@@ -41,6 +42,15 @@ const Layout = ({ title, children }) => {
           <div className="container px-12 mx-auto flex items-center justify-between sm:flex-col sm:justify-center ls:px-0">
             <div className="flex relative px-4 sm:w-auto sm:static sm:justify-center">
               <a href="/" className="flex items-center text-sm font-bold leading-relaxed cursor-pointer mr-4 py-2 whitespace-nowrap uppercase text-gray-800 sm:mr-0">
+=======
+        <link rel="stylesheet" href="style.css" />
+      </Head>
+      <div className={theme === 'light' ? 'dark' : 'light'}>
+        <nav className="w-full relative flex flex-wrap items-center justify-between px-2 py-3 mb-10 ls:px-0">
+          <div className="container px-12 mx-auto flex items-center justify-between sm:flex-col sm:justify-center ls:px-0">
+            <div className="flex relative px-4 sm:w-auto sm:static sm:justify-center">
+              <a href="/" className="flex items-center text-sm font-bold leading-relaxed cursor-pointer inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-800 sm:mr-0">
+>>>>>>> 8902ae5fb1460ecc1f3a39f39e3246624d0dc517
                 <Image className="image" src={logo} alt="Page's logo" width={40} height={40} />
               </a>
             </div>
@@ -51,7 +61,11 @@ const Layout = ({ title, children }) => {
               <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
             </button>
 
+<<<<<<< HEAD
             <div className="flex flex-grow items-center sm:justify-center sm:text-center ls:w-full ls:absolute ls:-bottom-52 z-50 ls:m-auto" id="example-navbar-warning">
+=======
+            <div className="flex flex-grow items-center sm:justify-center sm:text-center ls:w-full ls:absolute ls:-bottom-72 z-50 ls:m-auto" id="example-navbar-warning">
+>>>>>>> 8902ae5fb1460ecc1f3a39f39e3246624d0dc517
               <ul className={ menu === 'inline' ? 'ls:hidden flex list-none ml-auto transition--all duration-300' : 'menu-burger flex list-none ml-auto transition--all duration-300 ls:flex-col sm:justify-start ls:w-full ls:m-auto ls:items-center' }>
                 <li className="w-full">
                   <Link href="/" title="Home">
@@ -84,7 +98,11 @@ const Layout = ({ title, children }) => {
           </div>
         </nav>
 
+<<<<<<< HEAD
         <div className="w-3/4 m-auto h-full mt-12 ls:mt-0 flex flex-col justify-evenly">
+=======
+        <div className="w-3/4 m-auto h-full flex flex-col justify-evenly">
+>>>>>>> 8902ae5fb1460ecc1f3a39f39e3246624d0dc517
           {children}
         </div>
 
@@ -121,7 +139,11 @@ const Layout = ({ title, children }) => {
         </div>
 
         <footer className="w-3/4 m-auto pt-4">
+<<<<<<< HEAD
           <p className="text-center">©2023 Powered by <a className="font-black" href="https://github.com/Camilo-Suarez98" target="_blank">Camilo-Suarez98</a></p>
+=======
+          <p className="text-center">©2023 Powered by <a className="font-bold" href="https://github.com/Camilo-Suarez98" target="_blank">Camilo-Suarez98</a></p>
+>>>>>>> 8902ae5fb1460ecc1f3a39f39e3246624d0dc517
         </footer>
       </div>     
     </div>

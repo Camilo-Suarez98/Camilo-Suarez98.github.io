@@ -48,7 +48,7 @@ const Projects = () => {
                                 <h3 className="project-title h-14 hover:font-black">{user.name}</h3>
                                 {
                                     user.language === null ?
-                                    <p className="language-project">Language: No langage</p> :
+                                    <p className="language-project">Language: No language used</p> :
                                     <p className="language-project">Language: <strong>{user.language}</strong></p>
                                 }
                             </a>

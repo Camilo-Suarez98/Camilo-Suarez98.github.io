@@ -46,7 +46,11 @@ const Projects = () => {
                             <a target="_blank" className="text-gray-800 transition-all duration-300">
                                 <i className="project-icon fab fa-github fa-3x icon w-full h-16"></i>
                                 <h3 className="project-title h-14 hover:font-black">{user.name}</h3>
-                                <p className="language-project">Language: <strong>{user.language}</strong></p>
+                                {
+                                    user.language === null ?
+                                    <p className="language-project">No language used</p> :
+                                    <p className="language-project">Language: <strong>{user.language}</strong></p>
+                                }
                             </a>
                         </Link>
                     </div>

@@ -11,15 +11,15 @@ import { ThemeContext } from "../context/ThemeContext"
 
 const Layout = ({ title, children }) => {
   const { theme, toggleTheme } = useContext(ThemeContext)
-  const [ menu, setMenu ] = useState('inline')
+  const [menu, setMenu] = useState('inline')
   const showMenu = () => {
     setMenu(menu === 'inline' ? 'hidden' : 'inline')
   }
 
-  return(
+  return (
     <div>
       <Head>
-        <title>{ title } - Camilo S</title>
+        <title>{title} - Camilo S</title>
         <link rel="icon" href="/icono-portf.png" />
         <link
           rel="stylesheet"
@@ -44,7 +44,7 @@ const Layout = ({ title, children }) => {
                 <Image className="image" src={logo} alt="Page's logo" width={40} height={40} />
               </a>
             </div>
-            
+
             <button onClick={showMenu} className="hidden ls:inline burger" type="button">
               <span className="block relative w-6 h-px rounded-sm bg-white"></span>
               <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
@@ -52,7 +52,7 @@ const Layout = ({ title, children }) => {
             </button>
 
             <div className="flex flex-grow items-center sm:justify-center sm:text-center ls:w-full ls:absolute ls:-bottom-52 z-50 ls:m-auto" id="example-navbar-warning">
-              <ul className={ menu === 'inline' ? 'ls:hidden flex list-none ml-auto transition--all duration-300' : 'menu-burger flex list-none ml-auto transition--all duration-300 ls:flex-col sm:justify-start ls:w-full ls:m-auto ls:items-center' }>
+              <ul className={menu === 'inline' ? 'ls:hidden flex list-none ml-auto transition--all duration-300' : 'menu-burger flex list-none ml-auto transition--all duration-300 ls:flex-col sm:justify-start ls:w-full ls:m-auto ls:items-center'}>
                 <li className="w-full">
                   <Link href="/" title="Home">
                     <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:text-blue-500 ls:w-full ls:py-5 ls:justify-center">
@@ -68,7 +68,7 @@ const Layout = ({ title, children }) => {
                   </Link>
                 </li>
                 <li className="w-full">
-                  <Link href="https://docs.google.com/document/d/1pCMX9uTb3b7oc-cO1TdAweR5nXJfAmJK/edit">
+                  <Link href="https://drive.google.com/file/d/1fz4W1s2UYezy4QYc8wvp9-zwb2cfQZFC/view">
                     <a target="_blank" className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
                       Resume
                     </a>
@@ -76,7 +76,7 @@ const Layout = ({ title, children }) => {
                 </li>
                 <li className="w-full px-3 py-2 flex justify-center items-center">
                   <button onClick={toggleTheme}>
-                    { theme === 'light' ? '🌝' : '🌚' }
+                    {theme === 'light' ? '🌝' : '🌚'}
                   </button>
                 </li>
               </ul>
@@ -123,7 +123,7 @@ const Layout = ({ title, children }) => {
         <footer className="w-3/4 m-auto pt-4">
           <p className="text-center">©2023 Powered by <a className="font-black" href="https://github.com/Camilo-Suarez98" target="_blank">Camilo-Suarez98</a></p>
         </footer>
-      </div>     
+      </div>
     </div>
   )
 }

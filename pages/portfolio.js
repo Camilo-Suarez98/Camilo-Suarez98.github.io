@@ -12,7 +12,7 @@ const portfolio = () => {
                 <QueryClientProvider client={queryClient}>
                     <Projects />
                 </QueryClientProvider>
-                <a href="#top" className="circle-arrow fixed flex justify-center items-center w-9 h-9 rounded-full right-9 bottom-5 animate-bounce ease-in transition-all ease-in-out duration-300 sm:right-4 sm:bottom-2.5 hover:bg-blue-700">
+                <a href="#top" className="circle-arrow fixed flex justify-center items-center w-9 h-9 rounded-full right-9 bottom-5 animate-bounce ease-in transition-all duration-300 sm:right-4 sm:bottom-2.5 hover:bg-blue-700">
                     <span className="material-symbols-outlined flex">
                         arrow_upward
                     </span>

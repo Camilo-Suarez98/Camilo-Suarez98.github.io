@@ -20,7 +20,7 @@ body {
     background-color: transparent;
     position: absolute;
     right: 20px;
-    bottom: 32px;
+    bottom: 20px;
 }
 
 .link:hover .icon {
@@ -71,11 +71,14 @@ body {
     background-color: #dfdfdf;
 }
 
-.light .projects:hover a .project-title, .light .projects:hover a .language-project, .light .projects:hover a .project-icon {
+.light .projects:hover a .project-title,
+.light .projects:hover a .language-project,
+.light .projects:hover a .project-icon {
     color: rgb(55 65 81);
 }
 
-.light .projects:hover a h3, .light .projects:hover a p {
+.light .projects:hover a h3,
+.light .projects:hover a p {
     color: rgb(239 246 255);
 }
 
@@ -127,11 +130,15 @@ body {
     color: rgb(209 213 219);
 }
 
-.dark .projects:hover a .project-title, .dark .projects:hover a .language-project, .dark .projects:hover a .project-icon {
+.dark .projects:hover a .project-title,
+.dark .projects:hover a .language-project,
+.dark .projects:hover a .project-icon {
     color: rgb(209 213 219);
 }
 
-.dark .projects:hover a h3, .dark .projects:hover a p, .dark .projects:hover a i {
+.dark .projects:hover a h3,
+.dark .projects:hover a p,
+.dark .projects:hover a i {
     color: rgb(55 65 81);
 }
 

@@ -84,7 +84,7 @@ const Layout = ({ title, children }) => {
           </div>
         </nav>
 
-        <div className="w-3/4 m-auto h-full mt-12 ls:mt-0 flex flex-col justify-evenly">
+        <div className="w-3/4 m-auto h-full ls:mt-0 flex flex-col justify-evenly">
           {children}
         </div>
 
@@ -117,7 +117,7 @@ const Layout = ({ title, children }) => {
         </div>
 
         <div className="w-3/4 m-auto">
-          <h1 className="text-center">If you want to write me, send a message to <a href="mailto: camilo.suarez85@gmail.com" className="hover:opacity-70">camilo.suarez85@gmail.com</a></h1>
+          <h1 className="text-center text-xl">Do you want to send me an email? <a href="mailto: camilo.suarez85@gmail.com" className="hover:opacity-70">Click here</a></h1>
         </div>
 
         <footer className="w-3/4 m-auto pt-4">

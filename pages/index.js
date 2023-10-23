@@ -14,7 +14,7 @@ export default function Home() {
             <br />
             🚀 I specialize in crafting exceptional web experiences, with a focus on user-centric design and robust functionality. My skill set includes:
             <br />
-            - Frontend technologies: <strong>HTML, CSS, JavaScript, TypeScript</strong>
+            - Frontend technologies: <strong>HTML, CSS, JavaScript</strong>
             <br />
             - Frameworks and libraries: <strong>ReactJS, NextJS</strong>
             <br />

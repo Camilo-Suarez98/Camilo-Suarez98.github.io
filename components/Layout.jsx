@@ -68,7 +68,7 @@ const Layout = ({ title, children }) => {
                   </Link>
                 </li>
                 <li className="w-full">
-                  <Link href="https://drive.google.com/file/d/1fz4W1s2UYezy4QYc8wvp9-zwb2cfQZFC/view">
+                  <Link href="https://drive.google.com/file/d/1f2toB66E8Neg-LOpEwZ5jpJyhYLsj6eH/view?usp=drive_link">
                     <a target="_blank" className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
                       Resume
                     </a>

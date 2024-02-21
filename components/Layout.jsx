@@ -63,7 +63,7 @@ const Layout = ({ title, children }) => {
                 <li className="w-full">
                   <Link href="/portfolio" title="Portfolio">
                     <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
-                      Portfolio
+                      Projects
                     </a>
                   </Link>
                 </li>

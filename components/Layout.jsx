@@ -13,7 +13,7 @@ const Layout = ({ title, children }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [menu, setMenu] = useState('inline');
   const showMenu = () => {
-    setMenu(menu === 'inline' ? 'hidden' : 'inline')
+    setMenu(menu === 'inline' ? 'hidden' : 'inline');
   };
 
   return (

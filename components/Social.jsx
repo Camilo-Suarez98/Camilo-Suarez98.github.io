@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Social = () => {
     return (
@@ -20,7 +20,7 @@ const Social = () => {
                 </Link>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Social
+export default Social;

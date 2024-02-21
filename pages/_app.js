@@ -1,6 +1,6 @@
-import 'tailwindcss/tailwind.css'
-import "../public/style.css"
-import { ThemeProvider } from '../context/ThemeContext'
+import 'tailwindcss/tailwind.css';
+import "../public/style.css";
+import { ThemeProvider } from '../context/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,4 +12,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default MyApp;

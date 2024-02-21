@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Button = () => {
     return (
@@ -14,7 +14,7 @@ const Button = () => {
                 </a>
             </Link>
         </div>
-    )
-}
+    );
+};
 
-export default Button
+export default Button;

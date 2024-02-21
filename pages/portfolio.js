@@ -1,8 +1,8 @@
-import Layout from "../components/Layout"
-import { QueryClient, QueryClientProvider } from "react-query"
-import Projects from "../components/Projects"
+import Layout from "../components/Layout";
+import { QueryClient, QueryClientProvider } from "react-query";
+import Projects from "../components/Projects";
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
 const portfolio = () => {
     return (
@@ -19,7 +19,7 @@ const portfolio = () => {
                 </a>
             </Layout>
         </>
-    )
-}
+    );
+};
 
-export default portfolio
+export default portfolio;

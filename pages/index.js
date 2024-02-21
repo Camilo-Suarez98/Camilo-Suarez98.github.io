@@ -1,6 +1,6 @@
-import Layout from "../components/Layout"
-import Button from "../components/Button"
-import Social from "../components/Social"
+import Layout from "../components/Layout";
+import Button from "../components/Button";
+import Social from "../components/Social";
 
 export default function Home() {
   return (
@@ -21,5 +21,5 @@ export default function Home() {
         <Social />
       </Layout>
     </>
-  )
-}
+  );
+};

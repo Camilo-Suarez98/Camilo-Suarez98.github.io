@@ -1,20 +1,20 @@
-import Head from "next/head"
-import Link from "next/link"
-import Image from "next/image"
-import logo from "../public/icono-portf.png"
-import nextIcon from "../public/nextjs-icon.svg"
-import reactIcon from "../public/react-icon.svg"
-import reactQueryIcon from "../public/react-query-icon.svg"
-import tailwindIcon from "../public/tailwind-icon.svg"
-import React, { useContext, useState } from "react"
-import { ThemeContext } from "../context/ThemeContext"
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/icono-portf.png";
+import nextIcon from "../public/nextjs-icon.svg";
+import reactIcon from "../public/react-icon.svg";
+import reactQueryIcon from "../public/react-query-icon.svg";
+import tailwindIcon from "../public/tailwind-icon.svg";
+import React, { useContext, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Layout = ({ title, children }) => {
-  const { theme, toggleTheme } = useContext(ThemeContext)
-  const [menu, setMenu] = useState('inline')
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [menu, setMenu] = useState('inline');
   const showMenu = () => {
     setMenu(menu === 'inline' ? 'hidden' : 'inline')
-  }
+  };
 
   return (
     <div>
@@ -125,7 +125,7 @@ const Layout = ({ title, children }) => {
         </footer>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

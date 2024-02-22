@@ -51,25 +51,32 @@ const Layout = ({ title, children }) => {
               <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
             </button>
 
-            <div className="flex flex-grow items-center sm:justify-center sm:text-center ls:w-full ls:absolute ls:-bottom-52 z-50 ls:m-auto" id="example-navbar-warning">
+            <div className="flex flex-grow items-center z-50 transition duration-500 sm:justify-center sm:text-center ls:w-full ls:absolute ls:top-12 ls:-bottom-72 ls:m-auto">
               <ul className={menu === 'inline' ? 'ls:hidden flex list-none ml-auto transition--all duration-300' : 'menu-burger flex list-none ml-auto transition--all duration-300 ls:flex-col sm:justify-start ls:w-full ls:m-auto ls:items-center'}>
                 <li className="w-full">
                   <Link href="/" title="Home">
-                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:text-blue-500 ls:w-full ls:py-5 ls:justify-center">
+                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
                       Home
                     </a>
                   </Link>
                 </li>
                 <li className="w-full">
                   <Link href="/portfolio" title="Portfolio">
-                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
+                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
                       Projects
                     </a>
                   </Link>
                 </li>
                 <li className="w-full">
+                  <Link href="/contact" title="Contact">
+                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
+                      Contact
+                    </a>
+                  </Link>
+                </li>
+                <li className="w-full">
                   <Link href="https://drive.google.com/file/d/1f2toB66E8Neg-LOpEwZ5jpJyhYLsj6eH/view?usp=drive_link">
-                    <a target="_blank" className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 hover:opacity-75 ls:w-full ls:py-5 ls:justify-center">
+                    <a target="_blank" className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
                       Resume
                     </a>
                   </Link>
@@ -117,11 +124,25 @@ const Layout = ({ title, children }) => {
         </div>
 
         <div className="w-3/4 m-auto">
-          <h1 className="text-center text-xl">Do you want to send me an email? <a href="mailto: camilo.suarez85@gmail.com" className="hover:opacity-70">Click here</a></h1>
+          <h1 className="text-center text-xl">
+            Send me an email? {" "}
+            <a
+              href="mailto: camilo.suarez85@gmail.com"
+              className="transition  duration-500 hover:text-blue-700">
+              Click here
+            </a>
+          </h1>
         </div>
 
         <footer className="w-3/4 m-auto pt-4">
-          <p className="text-center">©2024 Powered by <a className="font-black" href="https://github.com/Camilo-Suarez98" target="_blank">Camilo-Suarez98</a></p>
+          <p className="text-center">
+            ©2024 Powered by {" "}
+            <a
+              className="font-black transition duration-500 hover:text-blue-700"
+              href="https://github.com/Camilo-Suarez98" target="_blank">
+              Camilo-Suarez98
+            </a>
+          </p>
         </footer>
       </div>
     </div>

@@ -143,7 +143,11 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-    .menu-burger {
+    .light .menu-burger {
+        background-color: #dfdfdf;
+    }
+
+    .dark .menu-burger {
         background-color: #1a3a6b;
     }
 }

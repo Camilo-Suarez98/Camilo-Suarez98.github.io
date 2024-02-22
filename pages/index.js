@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Button from "../components/Button";
+import Buttons from "../components/Buttons";
 import Social from "../components/Social";
 
 export default function Home() {
@@ -12,10 +12,8 @@ export default function Home() {
             I'm a Dedicated Frontend Developer based in Bucaramanga, Col 🇨🇴.
             <br />
             🚀 I specialize in crafting exceptional web experiences, with a focus on user-centric design and robust functionality. My skill set includes: HTML, CSS, JavaScript, React, Next, GIT, TailwindCSS, styled-components and SASS.
-            <br />
-            🌱 I'm on a constant journey of learning and self-improvement, always aiming to be a better programmer. Currently, I'm seeking new opportunities that challenge and expand my skills as a Frontend Developer.
           </p>
-          <Button />
+          <Buttons />
         </div>
         <Social />
       </Layout>

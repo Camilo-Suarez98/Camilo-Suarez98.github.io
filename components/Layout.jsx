@@ -75,11 +75,13 @@ const Layout = ({ title, children }) => {
                   </Link>
                 </li>
                 <li className="w-full">
-                  <Link href="https://drive.google.com/file/d/1f2toB66E8Neg-LOpEwZ5jpJyhYLsj6eH/view?usp=drive_link">
-                    <a target="_blank" className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
-                      Resume
-                    </a>
-                  </Link>
+                  <a
+                    href="https://drive.google.com/file/d/1f2toB66E8Neg-LOpEwZ5jpJyhYLsj6eH/view?usp=drive_link"
+                    target="_blank"
+                    className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center"
+                  >
+                    CV
+                  </a>
                 </li>
                 <li className="w-full px-3 py-2 flex justify-center items-center">
                   <button onClick={toggleTheme}>
@@ -95,7 +97,7 @@ const Layout = ({ title, children }) => {
           {children}
         </div>
 
-        <div className="mb-12">
+        <div className="mb-6">
           <div className="w-3/4 m-auto mb-10 text-center">
             <h2 className="text-xl">This page was created with</h2>
           </div>
@@ -123,18 +125,7 @@ const Layout = ({ title, children }) => {
           </div>
         </div>
 
-        <div className="w-3/4 m-auto">
-          <h1 className="text-center text-xl">
-            Send me an email? {" "}
-            <a
-              href="mailto: camilo.suarez85@gmail.com"
-              className="transition  duration-500 hover:text-blue-700">
-              Click here
-            </a>
-          </h1>
-        </div>
-
-        <footer className="w-3/4 m-auto pt-4">
+        <footer className="w-3/4 m-auto py-4">
           <p className="text-center">
             ©2024 Powered by {" "}
             <a

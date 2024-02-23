@@ -8,7 +8,7 @@ const portfolio = () => {
   return (
     <>
       <Layout title="Projects">
-        <h1 className="font-semibold text-4xl text-gray-700 text-center mb-8">Projects</h1>
+        <h1 className="font-semibold text-4xl text-center mb-8">Projects</h1>
         <QueryClientProvider client={queryClient}>
           <Projects />
         </QueryClientProvider>

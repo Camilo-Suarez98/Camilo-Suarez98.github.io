@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useQuery } from "react-query";
 import { useState } from "react";
 import Loader from "./Loader";
@@ -32,18 +31,16 @@ const Projects = () => {
       <div className="w-full grid grid-cols-3 gap-8 xl:grid-cols-2 pb-12 content-center text-center md:grid-cols-1 sm:mx-32 md:mx-36 lg:mx-48">
         {data?.slice(0, numProjects)?.map((user) => (
           <div key={user.id} className="projects w-full p-2.5 self-center justify-self-center transition-all duration-500 py-4 rounded-lg hover:border-gray-100 hover:bg-gray-300 hover:text-gray-500 hover:-translate-y-3 md:w-72 sm:w-60">
-            <Link className="w-60 h-52 cursor-pointer" href={user.html_url}>
-              <a target="_blank" className="text-gray-800 transition-all duration-300">
-                <i className="project-icon fab fa-github fa-3x icon w-full h-16"></i>
-                <h3 className="project-title h-14 hover:font-black">{user.name}</h3>
-                <p className="language-project">
-                  Language: {user.language === null ?
-                    "No language used" :
-                    <strong>{user.language}</strong>
-                  }
-                </p>
-              </a>
-            </Link>
+            <a target="_blank" href={user.html_url} className="w-60 h-52 cursor-pointer text-gray-800 transition-all duration-300">
+              <i className="project-icon fab fa-github fa-3x icon w-full h-16"></i>
+              <h3 className="project-title h-14 hover:font-black">{user.name}</h3>
+              <p className="language-project">
+                Language: {user.language === null ?
+                  "No language used" :
+                  <strong>{user.language}</strong>
+                }
+              </p>
+            </a>
           </div>
         ))}
       </div>

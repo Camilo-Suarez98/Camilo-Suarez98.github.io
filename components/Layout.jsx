@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import logo from "../public/icono-portf.png";
 import nextIcon from "../public/nextjs-icon.svg";
 import reactIcon from "../public/react-icon.svg";
 import reactQueryIcon from "../public/react-query-icon.svg";
@@ -8,6 +7,7 @@ import tailwindIcon from "../public/tailwind-icon.svg";
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = ({ title, children }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -76,16 +76,7 @@ const Layout = ({ title, children }) => {
           </div>
         </div>
 
-        <footer className="w-3/4 m-auto py-4">
-          <p className="text-center">
-            ©2024 Powered by {" "}
-            <a
-              className="font-black transition duration-500 hover:text-blue-700"
-              href="https://github.com/Camilo-Suarez98" target="_blank">
-              Camilo-Suarez98
-            </a>
-          </p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

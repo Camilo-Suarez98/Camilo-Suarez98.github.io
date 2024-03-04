@@ -1,6 +1,6 @@
 import logo from "../public/icono-portf.png";
-import Link from "next/link";
 import Image from "next/image";
+import NavLink from "./NavLink";
 
 const Header = ({ showMenu, menu, toggleTheme, theme }) => {
   return (
@@ -20,27 +20,9 @@ const Header = ({ showMenu, menu, toggleTheme, theme }) => {
 
         <div className="flex flex-grow items-center z-50 transition duration-500 sm:justify-center sm:text-center ls:w-full ls:absolute ls:top-12 ls:-bottom-72 ls:m-auto">
           <ul className={menu === 'inline' ? 'ls:hidden flex list-none ml-auto transition--all duration-300' : 'menu-burger flex list-none ml-auto transition--all duration-300 ls:flex-col sm:justify-start ls:w-full ls:m-auto ls:items-center'}>
-            <li className="w-full">
-              <Link href="/" title="Home">
-                <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className="w-full">
-              <Link href="/portfolio" title="Portfolio">
-                <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
-                  Projects
-                </a>
-              </Link>
-            </li>
-            <li className="w-full">
-              <Link href="/contact" title="Contact">
-                <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center">
-                  Contact
-                </a>
-              </Link>
-            </li>
+            <NavLink href="/" title="Home" />
+            <NavLink href="/portfolio" title="Projects" />
+            <NavLink href="/contact" title="Contact" />
             <li className="w-full">
               <a
                 href="https://drive.google.com/file/d/1f2toB66E8Neg-LOpEwZ5jpJyhYLsj6eH/view?usp=drive_link"

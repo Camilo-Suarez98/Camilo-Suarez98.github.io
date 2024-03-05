@@ -1,3 +1,4 @@
+import FormInput from '../components/FormInput';
 import Layout from '/components/Layout';
 
 const contact = () => {
@@ -8,20 +9,8 @@ const contact = () => {
         <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Send me a message</h2>
           <form className="flex flex-col" action="https://getform.io/f/Qe1gmobJ" method='POST'>
-            <input
-              type="text"
-              name='name'
-              className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-              placeholder="Full Name"
-              required
-            />
-            <input
-              type="email"
-              name='email'
-              className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-              placeholder="Email"
-              required
-            />
+            <FormInput type="text" name="name" placeholder="Full Name" />
+            <FormInput type="email" name="email" placeholder="Email" />
             <textarea
               name="message"
               className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"

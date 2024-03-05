@@ -12,7 +12,7 @@ const Projects = () => {
 
   const [numProjects, setNumProjects] = useState(firstProjects);
 
-  if (isLoading) return <Loader />
+  if (isLoading) return <Loader />;
 
   if (error) return 'An error has ocurred: ' + error.message;
 

@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import nextIcon from "../public/nextjs-icon.svg";
-import reactIcon from "../public/react-icon.svg";
-import reactQueryIcon from "../public/react-query-icon.svg";
-import tailwindIcon from "../public/tailwind-icon.svg";
+import nextIcon from "/public/nextjs-icon.svg";
+import reactIcon from "/public/react-icon.svg";
+import reactQueryIcon from "/public/react-query-icon.svg";
+import tailwindIcon from "/public/tailwind-icon.svg";
 import React, { useContext, useState } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "/context/ThemeContext";
 import Header from "./Header";
 import Footer from "./Footer";
 

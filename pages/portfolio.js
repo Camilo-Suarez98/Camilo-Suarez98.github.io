@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
+import Layout from "/components/Layout";
 import { QueryClient, QueryClientProvider } from "react-query";
-import Projects from "../components/Projects";
+import Projects from "/components/Projects";
 
 const queryClient = new QueryClient();
 

@@ -1,4 +1,4 @@
-import logo from "../public/icono-portf.png";
+import logo from "/public/icono-portf.png";
 import Image from "next/image";
 import NavLink from "./NavLink";
 

@@ -48,6 +48,10 @@ body {
 }
 
 .light .projects {
+    background-color: #c8c8c8;
+}
+
+.light .button {
     background-color: #dfdfdf;
 }
 
@@ -95,6 +99,10 @@ body {
 }
 
 .dark .projects {
+    background-color: #0d4ba8;
+}
+
+.dark .button {
     background-color: #1a3a6b;
 }
 

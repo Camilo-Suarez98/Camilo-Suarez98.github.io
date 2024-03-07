@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import nextIcon from "/public/nextjs-icon.svg";
 import reactIcon from "/public/react-icon.svg";
 import tailwindIcon from "/public/tailwind-icon.svg";

@@ -2,12 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import nextIcon from "/public/nextjs-icon.svg";
 import reactIcon from "/public/react-icon.svg";
-import reactQueryIcon from "/public/react-query-icon.svg";
 import tailwindIcon from "/public/tailwind-icon.svg";
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "/context/ThemeContext";
 import Header from "./Header";
 import Footer from "./Footer";
+import TechnologieUsed from "./TechnologieUsed";
 
 const Layout = ({ title, children }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -52,27 +52,10 @@ const Layout = ({ title, children }) => {
           <div className="w-3/4 m-auto mb-10 text-center">
             <h2 className="text-xl">This page was created with</h2>
           </div>
-          <div className="w-3/4 m-auto grid grid-cols-5 ls:grid-cols-3 sm:grid-cols-2">
-            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
-              <Image src={reactIcon} width={50} height={50} />
-              <h3>ReactJS</h3>
-            </div>
-            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
-              <Image src={nextIcon} width={50} height={50} />
-              <h3>NextJS</h3>
-            </div>
-            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
-              <Image src={reactQueryIcon} width={50} height={50} />
-              <h3>React Query</h3>
-            </div>
-            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
-              <Image src={tailwindIcon} width={50} height={50} />
-              <h3>Tailwind CSS</h3>
-            </div>
-            <div className="flex flex-col items-center justify-center ls:py-4 transition-all duration-300 hover:-translate-y-3">
-              <i className="fab fa-github fa-3x icon h-12"></i>
-              <h3>GitHub API</h3>
-            </div>
+          <div className="w-3/4 m-auto grid grid-cols-3 sm:grid-cols-2">
+            <TechnologieUsed icon={reactIcon} technologyName="ReactJS" />
+            <TechnologieUsed icon={nextIcon} technologyName="NextJS" />
+            <TechnologieUsed icon={tailwindIcon} technologyName="TailwindCSS" />
           </div>
         </div>
 

@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
         <br />
         <br />
         This project was built with:
-        <span className='font-bold'>{project.builtWith}</span>
+        <span className='font-bold'> {project.builtWith}</span>
       </p>
       <div className='flex items-around justify-center md:flex-col md:items-center'>
         <LinkButton href={project.url} linkName="Demo" />

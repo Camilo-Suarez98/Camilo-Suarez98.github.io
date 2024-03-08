@@ -15,7 +15,7 @@ export const projects = [
     description: "This is a project to create, sell and bid for nft's by auction. It's possible to create user and login with third party libraries like Google.",
     builtWith: 'ReactJS, Node.JS, Express, SASS, TypeScript and Prisma as an ORM for PostgreSQL.',
     url: 'https://nft-marketplace-frontend-one.vercel.app/',
-    repo: 'https://github.com/TatianaIng96/nft-marketplace-frontend'
+    repo: 'https://github.com/Camilo-Suarez98/nft-marketplace-frontend'
   },
   {
     id: 3,

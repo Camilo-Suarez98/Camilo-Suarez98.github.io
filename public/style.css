@@ -266,3 +266,50 @@ body {
         blinkCursor 0.5s step-end infinite alternate;
     margin-top: 1.5em;
 }
+
+/* Top Arrow starts here */
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-25px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.top-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+}
+
+.light .top-arrow {
+    background-color: #c8c8c8;
+}
+
+.dark .top-arrow {
+    background-color: #0d4ba8;
+}

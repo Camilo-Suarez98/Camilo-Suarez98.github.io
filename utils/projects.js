@@ -29,8 +29,8 @@ export const projects = [
   {
     id: 4,
     img: '/project-images/tenis-league.png',
-    name: 'Tenis League',
-    description: "This is a project to create, update and register for different tenis tournaments. It's possible to login with third party libraries like Google.",
+    name: 'Tennis League',
+    description: "This is a project to create, update and register for different tennis tournaments. It's possible to login with third party libraries like Google.",
     builtWith: 'ReactJS, Node.JS, Express, TailwindCSS and MongoDB.',
     url: 'https://liga-de-tenis-cyan.vercel.app/',
     repo: 'https://github.com/Camilo-Suarez98/liga-de-tenis'

@@ -1,7 +1,16 @@
+import { useRef, useEffect } from 'react';
 import FormInput from '../components/FormInput';
 import Layout from '/components/Layout';
 
 const contact = () => {
+  const inputRef = useRef();
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   return (
     <Layout title="Contact">
       <h2 className="font-semibold text-4xl text-center mb-8">Contact Form</h2>
@@ -9,7 +18,7 @@ const contact = () => {
         <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Send me a message</h2>
           <form className="flex flex-col" action="https://getform.io/f/Qe1gmobJ" method='POST'>
-            <FormInput type="text" name="name" placeholder="Full Name" />
+            <FormInput ref={inputRef} type="text" name="name" placeholder="Full Name" />
             <FormInput type="email" name="email" placeholder="Email" />
             <textarea
               name="message"

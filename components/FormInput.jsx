@@ -1,27 +1,18 @@
-import { useRef, useEffect } from 'react';
+import { forwardRef } from "react"
 
-const FormInput = ({ type, name, placeholder }) => {
-  const inputRef = useRef();
-
-  useEffect(() => {
-    if (name === 'name') {
-      inputRef.current.focus();
-    }
-  }, []);
-
-
+const FormInput = ({ type, name, placeholder }, ref) => {
   return (
     <>
       <input
         type={type}
         name={name}
-        ref={inputRef}
+        ref={ref}
         placeholder={placeholder}
         className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
         required
       />
     </>
-  )
-}
+  );
+};
 
-export default FormInput
+export default forwardRef(FormInput);

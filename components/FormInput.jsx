@@ -1,4 +1,4 @@
-import { forwardRef } from "react"
+import { forwardRef } from "react";
 
 const FormInput = ({ type, name, placeholder }, ref) => {
   return (

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import UrlLink from './UrlLink';
 
 const LinkButton = ({ href, linkName }) => {
   const notExternalUrl = href.startsWith('/') || href.startsWith('#');
@@ -6,23 +7,19 @@ const LinkButton = ({ href, linkName }) => {
   if (notExternalUrl) {
     return (
       <Link href={href}>
-        <a className="button buttons-color-letter w-48 my-3 text-center ml-2 rounded-3xl py-5 text-indigo-50 font-bold transition-all duration-500 hover:text-blue-50 hover:bg-blue-700 active:transform hover:-translate-y-3 ls:ml-0 ls:mt-2" rel="noreferrer">
-          {linkName}
-        </a>
+        <UrlLink>{linkName}</UrlLink>
       </Link>
     );
   } else {
     return (
-      <a
-        className="button buttons-color-letter w-48 my-3 text-center ml-2 rounded-3xl py-5 text-indigo-50 font-bold transition-all duration-500 hover:text-blue-50 hover:bg-blue-700 active:transform hover:-translate-y-3 ls:ml-0 ls:mt-2"
-        target='_blank'
-        rel="noreferrer"
+      <UrlLink
         href={href}
+        target="_blank"
       >
         {linkName}
-      </a>
+      </UrlLink>
     )
-  }
+  };
 };
 
 export default LinkButton;

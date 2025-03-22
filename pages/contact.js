@@ -3,10 +3,6 @@ import { useRef, useEffect } from 'react';
 import FormInput from '../components/FormInput';
 import Layout from '../components/Layout';
 import TitlePage from '../components/TitlePage';
-import TechnologiesUsed from '../components/TechnologiesUsed';
-import nextIcon from "/public/nextjs-icon.svg";
-import reactIcon from "/public/react-icon.svg";
-import tailwindIcon from "/public/tailwind-icon.svg";
 
 const contact = () => {
   const inputRef = useRef();
@@ -42,28 +38,6 @@ const contact = () => {
               Send
             </button>
           </form>
-        </div>
-      </div>
-      <div className="mb-6">
-        <div className="w-3/4 m-auto mb-10 text-center">
-          <h2 className="text-xl">This page was created with</h2>
-        </div>
-        <div className="w-3/4 m-auto grid grid-cols-3 sm:grid-cols-2">
-          <TechnologiesUsed
-            href="https://es.react.dev/"
-            icon={reactIcon}
-            technologyName="ReactJS"
-          />
-          <TechnologiesUsed
-            href="https://nextjs.org/"
-            icon={nextIcon}
-            technologyName="NextJS"
-          />
-          <TechnologiesUsed
-            href="https://tailwindcss.com/"
-            icon={tailwindIcon}
-            technologyName="TailwindCSS"
-          />
         </div>
       </div>
     </Layout>

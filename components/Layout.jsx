@@ -30,7 +30,6 @@ const Layout = ({ title, children }) => {
       </Head>
       <div className={theme === 'light' ? 'dark' : 'light'}>
         <Header />
-
         <div className="w-3/4 m-auto h-full ls:mt-0 flex flex-col justify-evenly flex-wrap">
           {children}
         </div>

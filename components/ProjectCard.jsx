@@ -4,7 +4,7 @@ import LinkButton from './LinkButton';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="projects w-11/12 p-6 self-center justify-self-center transition-all duration-500 rounded-3xl h-full hover:border-gray-100 hover:bg-gray-300 sm:w-80 sm:p-3 md:w-72">
+    <div className="projects w-11/12 p-6 self-center justify-self-center transition-all duration-500 rounded-3xl h-full hover:border-gray-100 sm:w-80 sm:p-3 md:w-72">
       <Image
         src={project.img}
         width={450}

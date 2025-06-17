@@ -52,7 +52,7 @@ body {
 }
 
 .light .projects {
-    background-color: #fff;
+    border: 1px solid #fff;
 }
 
 .light .button {
@@ -114,7 +114,7 @@ body {
 }
 
 .dark .projects {
-    background-color: #0d4ba8;
+    border: 1px solid #0d4ba8;
 }
 
 .dark h2,

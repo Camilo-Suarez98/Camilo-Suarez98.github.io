@@ -37,15 +37,6 @@ export const projects = [
   },
   {
     id: crypto.randomUUID(),
-    img: '/project-images/playgreen.png',
-    name: 'Playgreen Sports',
-    description: "This is the 'Tinder' for sports, where you can like or dislike different sports and you can see your selection histor. This project includes login function from firebase.",
-    builtWith: 'ReactJS, Firebase, Axios, and styled-components.',
-    url: 'https://playgreen-sport-381a6.web.app',
-    repo: 'https://github.com/Camilo-Suarez98/playgreen-sports'
-  },
-  {
-    id: crypto.randomUUID(),
     img: '/project-images/nft.png',
     name: 'NFT',
     description: "This is a project to create, sell and bid for nft's by auction. It's possible to create user and login with third party libraries like Google.",

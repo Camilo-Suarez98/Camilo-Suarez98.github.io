@@ -10,7 +10,7 @@ export const checkPageIsSelected = (theme, pathname) => {
     pathname === "/portfolio" ||
     pathname === "/contact"
   ) {
-    return "#0d4ba8";
+    return "#fff";
   } else {
     return "";
   }

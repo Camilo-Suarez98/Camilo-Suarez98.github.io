@@ -71,14 +71,6 @@ body {
     border: 2px solid rgb(37 99 235);
 }
 
-.light .send-form {
-    background-color: #1a3a6b;
-}
-
-.light .circle-arrow {
-    background-color: #dfdfdf;
-}
-
 .light .projects:hover a .project-title,
 .light .projects:hover a .language-project,
 .light .projects:hover a .project-icon,
@@ -126,10 +118,6 @@ body {
     border: 1px solid #1a3a6b;
 }
 
-.dark .send-form {
-    background-color: rgb(239 246 255);
-}
-
 .dark .buttons-color-letter {
     color: rgb(239 246 255);
 }
@@ -140,10 +128,6 @@ body {
 
 .dark .border-resume {
     border: 2px solid rgb(147 197 253);
-}
-
-.dark .circle-arrow {
-    background-color: #1a3a6b;
 }
 
 .dark h1 {

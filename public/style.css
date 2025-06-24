@@ -60,11 +60,7 @@ body {
 }
 
 .light .buttons-color-letter {
-    color: rgb(55 65 81);
-}
-
-.light .buttons-color-form {
-    color: rgb(239 246 255);
+    border: 1px solid #fff;
 }
 
 .light .border-resume {
@@ -120,10 +116,7 @@ body {
 
 .dark .buttons-color-letter {
     color: rgb(239 246 255);
-}
-
-.dark .buttons-color-form {
-    color: rgb(55 65 81);
+    border: 1px solid #1a3a6b;
 }
 
 .dark .border-resume {

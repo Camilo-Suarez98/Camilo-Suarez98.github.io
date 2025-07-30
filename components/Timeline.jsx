@@ -65,3 +65,14 @@ const Timeline = () => {
 }
 
 export default Timeline;
+
+// For evius project
+// const TemporaryCard = ({ title }: { title: string }) => (
+// 	<Paper p='md' radius='lg' h={200} style={{ backgroundColor: 'white' }}>
+// 		<Center h='100%'>
+// 			<Text c='gray.5' size='sm' ta='center'>
+// 				{title}
+// 			</Text>
+// 		</Center>
+// 	</Paper>
+// );

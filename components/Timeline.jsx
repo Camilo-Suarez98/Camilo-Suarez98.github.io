@@ -12,7 +12,7 @@ const Timeline = () => {
             date="July 2025 - Currently"
             jobTitle="Frontend Developer"
             company="Mocion Experience Tech"
-            description="- I developed a new software to create events and receive the data from users about the event. And that data could be selled to other companies to make new events and improve the user experience."
+            description="- I develop a new software to create events and receive the data from users about the event. And that data could be selled to other companies to make new events and improve the user experience."
             secondDescription=""
           />
           <hr />
@@ -22,7 +22,7 @@ const Timeline = () => {
             date="July 2025 - Currently"
             jobTitle="Frontend Developer"
             company="Mocion Experience Tech"
-            description="- I developed a new software to create events and receive the data from users about the event. And that data could be selled to other companies to make new events and improve the user experience."
+            description="- I develop a new software to create events and receive the data from users about the event. And that data could be selled to other companies to make new events and improve the user experience."
             secondDescription=""
           />
           <hr />

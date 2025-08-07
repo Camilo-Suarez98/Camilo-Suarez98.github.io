@@ -7,10 +7,6 @@ const Buttons = () => {
         href='/portfolio'
         linkName="View Projects"
       />
-      <LinkButton
-        href='/contact'
-        linkName="Contact me"
-      />
     </div>
   );
 };

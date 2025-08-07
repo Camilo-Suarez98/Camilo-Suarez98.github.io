@@ -48,14 +48,14 @@ const Header = () => {
               <a
                 href="https://drive.google.com/file/d/1HaaEWzGIoIe0r7qi42Da-22_oMI7yNvP/view?usp=drive_link"
                 target="_blank"
-                className="border-resume px-3 py-2 border-2 sm:border-4 flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 hover:text-blue-700 ls:w-full ls:py-5 ls:justify-center"
+                className="border-resume px-3 py-2 border-2 rounded-md flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 sm:border-4 ls:w-full ls:py-5 ls:justify-center"
               >
                 CV
               </a>
             </li>
             <li className="w-full px-3 py-2 flex justify-center items-center ls:py-4">
               <button className="w-full flex justify-center" onClick={toggleTheme}>
-                {theme === 'light' ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-86 text-gray-800" />}
+                {theme === 'dark' ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-86 text-gray-800" />}
               </button>
             </li>
             {value &&

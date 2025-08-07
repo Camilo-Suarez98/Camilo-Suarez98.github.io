@@ -28,7 +28,7 @@ const Layout = ({ title, children }) => {
         <meta name="twitter:description" content="Explore my project portfolio to discover my experience and skills in software development. Find examples of web sites i have created." />
         <meta name="twitter:image" content="" />
       </Head>
-      <div className={theme === 'light' ? 'dark' : 'light'}>
+      <div className={theme === 'light' ? 'light' : 'dark'}>
         <Header />
         <div className="w-3/4 m-auto h-full ls:mt-0 flex flex-col justify-evenly flex-wrap">
           {children}

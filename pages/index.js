@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <Buttons />
         </div>
-        <h3 className="text-center text-4xl mt-10 mb-4">Experience 💼</h3>
+        <h3 className="text-center text-4xl mb-2">Experience 💼</h3>
         <div className="my-14 md:my-8">
           <Timeline />
         </div>

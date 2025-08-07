@@ -64,7 +64,7 @@ body {
 }
 
 .light .border-resume {
-    border: 2px solid rgb(37 99 235);
+    border: 2px solid #fff;
 }
 
 .light .projects:hover a .project-title,
@@ -119,10 +119,6 @@ body {
     border: 1px solid #1a3a6b;
 }
 
-.dark .border-resume {
-    border: 2px solid rgb(147 197 253);
-}
-
 .dark h1 {
     color: rgb(239 246 255);
 }
@@ -149,6 +145,10 @@ body {
 
 .dark .close-btn {
     background-color: #0d4ba8;
+}
+
+.dark .border-resume {
+    border: 2px solid #0d4ba8;
 }
 
 @media screen and (max-width: 650px) {

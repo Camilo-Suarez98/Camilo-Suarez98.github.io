@@ -4,11 +4,11 @@ export const checkPageIsSelected = (theme, pathname) => {
     pathname === "/portfolio" && theme === "dark" ||
     pathname === "/contact" && theme === "dark"
   ) {
-    return "#c8c8c8";
+    return "#0d4ba8";
   } else if (
-    pathname === "/" ||
-    pathname === "/portfolio" ||
-    pathname === "/contact"
+    pathname === "/" && theme === "light" ||
+    pathname === "/portfolio" && theme === "light" ||
+    pathname === "/contact" && theme === "light"
   ) {
     return "#fff";
   } else {

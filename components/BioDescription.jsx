@@ -1,7 +1,7 @@
 const BioDescription = () => {
   return (
     <p className="text-2xl text-gray-500 text-center animate-fadeInLeft md:text-xl lg:pb-16">
-      I'm Camilo, a passionate Full Stack Developer based in Bucaramanga, Colombia 🇨🇴.
+      I'm Camilo, a Full Stack Developer based in Bucaramanga, Colombia🇨🇴.
       <br />
       With a keen eye for detail and a love for solving complex problems, I specialize in creating seamless web experiences that blend modern design with cutting-edge technology.
       <br />

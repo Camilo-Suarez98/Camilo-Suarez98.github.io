@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <>
       <Layout title="Home">
-        <div className="flex flex-col justify-around items-center h-auto mt-12 mb-9 w-full ls:h-5/6 md:mt-16 lg:mt-24">
+        <div className="flex flex-col justify-around items-center h-auto mt-6 mb-9 w-full ls:h-5/6">
           <div className="flex items-center animate-fadeInTop">
-            <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" height="35" />
-            <TitlePage level={1} value="Hi! I'm..." />
+            <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40" height="40" />
+            <TitlePage level={1} value="Hello!..." />
           </div>
           <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=cyan&size=25&center=true&vCenter=true&width=600&height=100&lines=Camilo+Suárez,;Full+Stack+Developer,;Love+to+learn+new+stuffs..<3" />
           <div className="flex flex-1 flex-row items-center lg:flex-col">
-            <div className="shrink">
+            <div className="lg:animate-none 2xl:animate-fadeInLeft">
               <BioDescription />
             </div>
             <div className="lg:animate-none 2xl:animate-fadeInRight">
@@ -34,11 +34,11 @@ export default function Home() {
           </div>
           <Buttons />
         </div>
-        <h3 className="text-center text-4xl mb-2">Experience 💼</h3>
-        <div className="my-14 md:my-8">
+        <h3 id="experience" className="text-center text-4xl mb-2">Experience 💼</h3>
+        <div className="my-8">
           <Timeline />
         </div>
-        <div className="my-14 md:my-8">
+        <div className="my-8">
           <h3 className="text-center text-4xl mb-16">Skills 👨🏻‍💻</h3>
           <TechStack />
         </div>

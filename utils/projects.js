@@ -1,6 +1,24 @@
 export const projects = [
   {
     id: crypto.randomUUID(),
+    img: '/project-images/pokemon-app.png',
+    name: 'Pokemon App',
+    description: 'This is a page about Pokémon, using the PokeApi to ftech the first generation of this popular TV Show, you can see them in a table view or grid and click each one to see more details.',
+    builtWith: 'ReactJS, TailwindCS and PokeAPI',
+    url: 'https://pokemon-app-alpha-one.vercel.app/',
+    repo: 'https://github.com/Camilo-Suarez98/pokemon-app'
+  },
+  {
+    id: crypto.randomUUID(),
+    img: '/project-images/explora-eventos.png',
+    name: 'Explora Events',
+    description: 'This is a project where you can see different events, name, date, type and filter by those items, then you can click each one to see more details about the event and a button to registration.',
+    builtWith: 'ReactJS, TailwindCSS and Framer.Motion',
+    url: 'https://explora-eventos.vercel.app/',
+    repo: 'https://github.com/Camilo-Suarez98/explora-eventos'
+  },
+  {
+    id: crypto.randomUUID(),
     img: '/project-images/cxp.png',
     name: 'CXP',
     description: 'This is a landging page about different cryptos, the project include 2 galleries for crypto prices(fake price) and other in the bottom with a gallery of videos.',
@@ -21,19 +39,10 @@ export const projects = [
     id: crypto.randomUUID(),
     img: '/project-images/promocar.png',
     name: 'Promo-Car',
-    description: 'This is a projectfor clients of a company to complete a form to get a unique code for participate in a car raffle(just an project not real).',
-    builtWith: 'NextJ and TailwindCSS',
+    description: 'This is a project for clients of a company, they have the opportunity to complete it and get a unique code for participate in a car raffle (just an project not real).',
+    builtWith: 'NextJS and TailwindCSS',
     url: 'https://promo-car.vercel.app',
     repo: 'https://github.com/Camilo-Suarez98/promo-car'
-  },
-  {
-    id: crypto.randomUUID(),
-    img: '/project-images/pokedex.png',
-    name: 'PokeDex',
-    description: 'This is a project to show different characters from the famous Pokemon series, you can search by name or by id to see information about any Pokemon.',
-    builtWith: 'ReactJS, TailwindCSS and PokeAPI.',
-    url: 'https://poke-dex-sable.vercel.app/',
-    repo: 'https://github.com/Camilo-Suarez98/PokeDex'
   },
   {
     id: crypto.randomUUID(),

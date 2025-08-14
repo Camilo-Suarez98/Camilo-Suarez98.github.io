@@ -13,7 +13,7 @@ export const projects = [
     img: '/project-images/explora-eventos.png',
     name: 'Explora Events',
     description: 'This is a project where you can see different events, name, date, type and filter by those items, then you can click each one to see more details about the event and a button to registration.',
-    builtWith: 'ReactJS, TailwindCSS and Framer.Motion',
+    builtWith: 'ReactJS, TailwindCSS and Zustand',
     url: 'https://explora-eventos.vercel.app/',
     repo: 'https://github.com/Camilo-Suarez98/explora-eventos'
   },

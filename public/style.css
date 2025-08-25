@@ -37,7 +37,7 @@ body {
 }
 
 .light {
-    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(210, 210, 210, 1) 80%, rgba(148, 148, 148, 1) 100%);
+    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgb(210, 210, 210) 80%, rgba(148, 148, 148, 1) 100%);
     transition: all 0.3s ease;
     min-height: 100vh;
     position: relative;
@@ -87,6 +87,10 @@ body {
 }
 
 .light .close-btn {
+    background-color: #c8c8c8;
+}
+
+.light .tech-stack {
     background-color: #c8c8c8;
 }
 
@@ -153,6 +157,10 @@ body {
 
 .dark .border-resume {
     border: 2px solid #0d4ba8;
+}
+
+.dark .tech-stack {
+    background-color: #020024;
 }
 
 @media screen and (max-width: 650px) {

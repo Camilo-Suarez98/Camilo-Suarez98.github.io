@@ -19,13 +19,16 @@ const ProjectCard = ({ project }) => {
       <h3 className="project-title my-4 text-3xl font-black md:text-xl">{project.name}</h3>
       <p className='language-project flex-grow mb-4 text-lg md:text-sm'>
         {project.description}
-        <br />
-        <br />
-        This project was built with:
-        <span className='font-bold'> {project.builtWith}</span>
       </p>
+      <section className='flex items-center justify-center gap-4'>
+        {project.builtWith.map((tech, index) => (
+          <span key={index} className='tech-stack p-1 rounded-md text-sm'>
+            {tech.stack}
+          </span>
+        ))}
+      </section>
       <div className='flex items-around justify-center md:flex-col md:items-center'>
-        <LinkButton href={project.url} linkName="Demo" />
+        <LinkButton href={project.url} linkName="Website" />
         <LinkButton href={project.repo} linkName="Repo" />
       </div>
     </div>

@@ -7,7 +7,7 @@ const LinkButton = ({ href = '', linkName }) => {
     return (
       <Link
         href={href}
-        className="button buttons-color-letter w-48 my-3 text-center ml-2 rounded-xl py-4 font-bold transition-all duration-500 active:transform hover:shadow-xl sm:w-full sm:rounded-xl ls:ml-0 ls:mt-2"
+        className="button buttons-color-letter w-48 my-3 text-sm text-center ml-2 rounded-xl py-2 font-bold transition-all duration-500 active:transform hover:shadow-xl sm:w-full sm:rounded-xl ls:ml-0 ls:mt-2"
         rel="noreferrer"
       >
         {linkName}
@@ -16,7 +16,7 @@ const LinkButton = ({ href = '', linkName }) => {
   } else {
     return (
       <a
-        className="button buttons-color-letter w-48 my-3 text-center ml-2 rounded-xl py-4 font-bold transition-all duration-500 active:transform hover:shadow-xl sm:w-full sm:rounded-xl ls:ml-0 ls:mt-2"
+        className="button buttons-color-letter w-48 my-3 text-sm text-center ml-2 rounded-xl py-2 font-bold transition-all duration-500 active:transform hover:shadow-xl sm:w-full sm:rounded-xl ls:ml-0 ls:mt-2"
         rel="noreferrer"
         href={href}
         target='_blank'

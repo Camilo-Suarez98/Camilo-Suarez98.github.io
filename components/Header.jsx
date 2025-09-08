@@ -47,7 +47,7 @@ const Header = () => {
             <NavLink background={pathname === "#experience" ? backgroundLink : ""} href="/#experience">Experience</NavLink>
             <li className="w-full">
               <a
-                href="https://drive.google.com/file/d/1HaaEWzGIoIe0r7qi42Da-22_oMI7yNvP/view?usp=drive_link"
+                href="https://drive.google.com/file/d/176hHcLrMqLZilL4TmRCyqmdIAmedA819/view?usp=drive_link"
                 target="_blank"
                 className="border-resume px-3 py-2 border-2 rounded-md flex items-center text-sm uppercase font-bold leading-snug text-gray-800 transition duration-500 sm:border-4 ls:w-full ls:py-5 ls:justify-center"
               >

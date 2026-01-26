@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
         ))}
       </section>
       <div className='flex items-around justify-center md:flex-col md:items-center'>
-        <LinkButton href={project.url} linkName="Website" />
+        <LinkButton href={project.url} linkName="Demo" />
         <LinkButton href={project.repo} linkName="Repo" />
       </div>
     </div>

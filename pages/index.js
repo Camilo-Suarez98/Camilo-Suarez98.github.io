@@ -8,6 +8,7 @@ import BioDescription from "/components/BioDescription";
 import TechStack from "../components/TechStack";
 import profileImage from "../public/profile.jpeg";
 import Timeline from "../components/Timeline";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -34,10 +35,17 @@ export default function Home() {
           </div>
           <Buttons />
         </div>
+
         <h3 id="experience" className="text-center text-4xl mb-2">Experience 💼</h3>
         <div className="my-8">
           <Timeline />
         </div>
+
+        <section id="projects" className="w-full my-16 px-4 md:px-0">
+          <h3 className="text-center text-4xl mb-16 font-bold md:text-2xl lg:text-3xl">Featured Projects 🚀</h3>
+          <Projects />
+        </section>
+
         <div className="my-8">
           <h3 className="text-center text-4xl mb-16">Skills 👨🏻‍💻</h3>
           <TechStack />

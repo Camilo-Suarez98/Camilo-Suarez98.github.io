@@ -1,4 +1,3 @@
-import React from 'react';
 import LeftTimeline from './LeftTimeline';
 import RightTimeline from './RigthTimeline';
 import MobileRigthTimeline from './MobileRigthTimeline';

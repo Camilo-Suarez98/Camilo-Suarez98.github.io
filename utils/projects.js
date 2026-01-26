@@ -1,6 +1,66 @@
 export const projects = [
   {
     id: crypto.randomUUID(),
+    img: '/project-images/cine-explorer.png',
+    name: 'Cine Explorer',
+    description: "This is a project to see all movies and series from famous movies, with detailed information and option to login and favorite movies using AI.",
+    builtWith: 'Next.js, TailwindCSS, TMDB API, OpenAI API.',
+    builtWith: [
+      {
+        stack: 'Next.js'
+      },
+      {
+        stack: 'TailwindCSS'
+      },
+      {
+        stack: 'TMDB API'
+      },
+      {
+        stack: 'OpenAI API'
+      }
+    ],
+    url: 'https://cine-explorer-six.vercel.app/',
+    repo: 'https://github.com/Camilo-Suarez98/cine-explorer'
+  },
+  {
+    id: crypto.randomUUID(),
+    img: '/project-images/be-kind.png',
+    name: 'Be Kind',
+    description: "This is a dashboard to show categories like name, description logo and color, the endpoint is provided by a third party API.",
+    builtWith: 'ReactJS, TailwindCSS',
+    builtWith: [
+      {
+        stack: 'React'
+      },
+      {
+        stack: 'TailwindCSS'
+      }
+    ],
+    url: 'https://rick-and-morty-graphql-mo.vercel.app/',
+    repo: 'https://github.com/Camilo-Suarez98/rick-and-morty-graphql'
+  },
+  {
+    id: crypto.randomUUID(),
+    img: '/project-images/rick-and-morty.png',
+    name: 'Rick and Morty',
+    description: "This is a project to see all characters from famous Rick and Morty series, with filters by name, status and gender.",
+    builtWith: 'Next.js, TailwindCSS and Rick and Morty API.',
+    builtWith: [
+      {
+        stack: 'Next.js'
+      },
+      {
+        stack: 'TailwindCSS'
+      },
+      {
+        stack: 'Rick and Morty API'
+      }
+    ],
+    url: 'https://rick-and-morty-murex-sigma.vercel.app',
+    repo: 'https://github.com/Camilo-Suarez98/rick-and-morty'
+  },
+  {
+    id: crypto.randomUUID(),
     img: '/project-images/pokemon-app.png',
     name: 'Pokemon App',
     description: 'This is a page about Pokémon, using the PokeApi to fetch the first generation of this popular TV Show, you can see them in a table view or grid and click each one to see more details.',
@@ -36,57 +96,6 @@ export const projects = [
   },
   {
     id: crypto.randomUUID(),
-    img: '/project-images/cxp.png',
-    name: 'CXP',
-    description: 'This is a landging page about different cryptos, the project include 2 galleries for crypto prices(fake price) and other in the bottom with a gallery of videos.',
-    builtWith: [
-      {
-        stack: 'NextJS'
-      },
-      {
-        stack: 'TailwindCSS'
-      },
-    ],
-    url: 'https://cxp-steel.vercel.app',
-    repo: 'https://github.com/Camilo-Suarez98/cxp'
-  },
-  {
-    id: crypto.randomUUID(),
-    img: '/project-images/filepass.png',
-    name: 'FilePass',
-    description: 'This is a project to Drag&Drop files, including a login function(including load state and error information) and the dashboard is protected if user is not logged.',
-    builtWith: [
-      {
-        stack: 'React'
-      },
-      {
-        stack: 'TailwindCSS'
-      },
-      {
-        stack: 'Reques.in'
-      },
-    ],
-    url: 'https://file-pass-sooty.vercel.app',
-    repo: 'https://github.com/Camilo-Suarez98/file-pass'
-  },
-  {
-    id: crypto.randomUUID(),
-    img: '/project-images/promocar.png',
-    name: 'Promo-Car',
-    description: 'This is a project for clients of a company, they have the opportunity to complete it and get a unique code for participate in a car raffle (just an project not real).',
-    builtWith: [
-      {
-        stack: 'NextJS'
-      },
-      {
-        stack: 'TailwindCSS'
-      },
-    ],
-    url: 'https://promo-car.vercel.app',
-    repo: 'https://github.com/Camilo-Suarez98/promo-car'
-  },
-  {
-    id: crypto.randomUUID(),
     img: '/project-images/nft.png',
     name: 'NFT',
     description: "This is a project to create, sell and bid for nft's by auction. It's possible to create user and login with third party libraries like Google.",
@@ -115,62 +124,6 @@ export const projects = [
   },
   {
     id: crypto.randomUUID(),
-    img: '/project-images/rick-and-morty.png',
-    name: 'Rick and Morty',
-    description: "This is a project to see all characters from famous Rick and Morty series, also you can see all the information about episodes and locations.",
-    builtWith: 'ReactJS, TailwindCSS and Rick and Morty API.',
-    builtWith: [
-      {
-        stack: 'React'
-      },
-      {
-        stack: 'TailwindCSS'
-      }
-    ],
-    url: 'https://rick-and-morty-graphql-mo.vercel.app/',
-    repo: 'https://github.com/Camilo-Suarez98/rick-and-morty-graphql'
-  },
-  {
-    id: crypto.randomUUID(),
-    img: '/project-images/tennis-league.png',
-    name: 'Tennis League',
-    description: "This is a project to create, update and register for different tennis tournaments. It's possible to login with third party libraries like Google.",
-    builtWith: [
-      {
-        stack: 'React'
-      },
-      {
-        stack: 'Node.js'
-      },
-      {
-        stack: 'Express'
-      },
-      {
-        stack: 'TailwindCSS'
-      },
-    ],
-    url: 'https://liga-de-tenis-cyan.vercel.app/',
-    repo: 'https://github.com/Camilo-Suarez98/liga-de-tenis'
-  },
-  {
-    id: crypto.randomUUID(),
-    img: '/project-images/exercise-results.png',
-    name: 'VerifyFit',
-    description: "This is a project to upload a file or manually enter data into a form on the walk result to determine if it is real or fake.",
-    builtWith: 'ReactJS and TailwindCSS.',
-    builtWith: [
-      {
-        stack: 'React'
-      },
-      {
-        stack: 'TailwindCSS'
-      }
-    ],
-    url: 'https://exercise-results.vercel.app/',
-    repo: 'https://github.com/Camilo-Suarez98/excercise-results'
-  },
-  {
-    id: crypto.randomUUID(),
     img: '/project-images/automarket.png',
     name: 'Auto Market',
     description: "This is a project to create and search for cars for sale. It's possible to create user and login with third party libraries like Google.",
@@ -194,29 +147,5 @@ export const projects = [
     ],
     url: 'https://auto-market-frontend-git-main-camilo-suarez98.vercel.app/',
     repo: 'https://github.com/Camilo-Suarez98/auto-market-frontend'
-  },
-  {
-    id: crypto.randomUUID(),
-    img: '/project-images/table-crud.png',
-    name: 'Table CRUD',
-    description: "This is a project to create, read, update and delete elements. You can choose any element and update or delete it, or create a new one.",
-    builtWith: 'ReactJS, Node.JS, Express and SASS.',
-    builtWith: [
-      {
-        stack: 'React'
-      },
-      {
-        stack: 'Node.js'
-      }
-      ,
-      {
-        stack: 'Express'
-      },
-      {
-        stack: 'SASS'
-      }
-    ],
-    url: 'https://project-group-table-mir.vercel.app/',
-    repo: 'https://github.com/Camilo-Suarez98/project-group-table-mir'
   }
 ];
